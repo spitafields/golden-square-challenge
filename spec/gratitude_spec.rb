@@ -20,6 +20,7 @@ class TestGratitudes < Test::Unit::TestCase
     assert_equal("Be grateful for: family", @gratitudes.format)
 
     @gratitudes.add("friends")
+  
     @gratitudes.add("health")
     assert_equal("Be grateful for: family, friends, health", @gratitudes.format)
   end
