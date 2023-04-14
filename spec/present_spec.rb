@@ -15,6 +15,6 @@ RSpec.describe Present do
   it "fails if we wrap if we've already unwrapped" do
     present = Present.new
     present.wrap(6)
-    expect { present.wrap(7) }.to raise_error "A content has already been wrapped."
+    expect { present.wrap(7) }.to raise_error "A contents has already been wrapped."
   end
 end
